@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -30,8 +30,24 @@ return {
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
-        signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-        wrap = false, -- sets vim.opt.wrap
+        signcolumn = "yes", -- sets vim.opt.signcolumn to auto
+        -- wrap = false, -- sets vim.opt.wrap
+        cursorline = false,
+        preserveindent = true, -- Preserve indent structure as much as possible
+        shiftwidth = 4,
+        tabstop = 4,
+        swapfile = false, -- Disable use of swapfile for the buffer
+        termguicolors = true, -- Enable 24-bit RGB color in the TUI
+        wrap = true, -- sets vim.opt.wrap
+        writebackup = false, -- Disable making a backup before overwriting a file
+        list = true, -- Ativa o listchars abaixo
+        listchars = {
+          tab = "▸-", -- Define o caractere usado para representar tabulações
+          trail = "~", -- Define o caractere usado para representar espaços em branco ao final de uma linha
+          extends = ">", -- Define o caractere usado para representar a continuação de linhas longas
+          precedes = "<", -- Define o caractere usado para representar a linha que precede uma linha longa
+          eol = "↵", -- Adiciona o caractere '↵' na última linha do arquivo
+        },
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)

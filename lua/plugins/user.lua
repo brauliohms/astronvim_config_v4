@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
@@ -23,17 +23,15 @@ return {
     opts = function(_, opts)
       -- customize the dashboard header
       opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
+        [[                                                          ]],
+        [[                                                          ]],
+        [[ ____                  _ _          ____          _       ]],
+        [[| __ ) _ __ __ _ _   _| (_) ___    / ___|___   __| | ___  ]],
+        [[|  _ \| '__/ _` | | | | | |/ _ \  | |   / _ \ / _` |/ _ \ ]],
+        [[| |_) | | | (_| | |_| | | | (_) | | |__| (_) | (_| |  __/ ]],
+        [[|____/|_|  \__,_|\__,_|_|_|\___/   \____\___/ \__,_|\___| ]],
+        [[                                                          ]],
+        [[                                                          ]],
       }
       return opts
     end,
@@ -82,4 +80,5 @@ return {
       )
     end,
   },
+  { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 }
