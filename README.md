@@ -62,6 +62,11 @@ You can also just clone this repository directly if you do not want to track you
 git clone https://github.com/brauliohms/astronvim_config_v4 ~/.config/nvim
 ```
 
+#### Create Alias
+
+`echo "alias vi='nvim'" >> ~/.bash_aliases`
+`echo "alias vim='nvim'" >> ~/.bash_aliases`
+
 #### Start Neovim
 
 ```bash
