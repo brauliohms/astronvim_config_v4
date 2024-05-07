@@ -72,3 +72,17 @@ git clone https://github.com/brauliohms/astronvim_config_v4 ~/.config/nvim
 ```bash
 nvim
 ```
+
+#### Settings for Pyhton
+
+After first install, coment in `lua/communuty.lua`:
+`{ import = "astrocommunity.pack.python" },`
+
+and install if not installed in Mason(type `:Mason`), the packages:
+`ast-grep, autoflake, autopep8, black, debugpy, flake8, isort, python-lsp-server, ruff-lsp`
+
+and remove `pyright`
+
+> In Mason find the package and select and:
+> to install -> press `i` (lowercase)
+> to uninstall -> press `X` (uppercase)
