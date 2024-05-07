@@ -14,7 +14,7 @@ return {
     config = function() require "plugins.config.vscode" end,
   },
   { import = "astrocommunity.completion.copilot-lua" },
-  -- { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.html-css" },
