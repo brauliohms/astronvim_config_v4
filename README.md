@@ -6,6 +6,10 @@ A template for getting started with [AstroNvim](https://github.com/AstroNvim/Ast
 
 ## 🛠️ Installation
 
+### Install Dependencies
+
+`sudo apt install npm python3 python3-pip python3-venv`
+
 #### Make a backup of your current nvim and shared folder
 
 ```bash
@@ -46,8 +50,10 @@ sudo make install
 ### Install NerdFonts
 
 ```bash
-git clone --depth=1 https://github.com/terroo/fonts ~/.local/share/
+git clone --depth=1 https://github.com/terroo/fonts fonts
+mv fonts/fonts ~/.local/share
 fc-cache -fv
+rm -r fonts
 ```
 
 #### Create a new user repository from this template
@@ -75,7 +81,7 @@ nvim
 
 #### Settings for Pyhton
 
-After first install, coment in `lua/communuty.lua`:
+After first install, coment in `lua/community.lua`:
 `{ import = "astrocommunity.pack.python" },`
 
 and install if not installed in Mason(type `:Mason`), the packages:
@@ -86,3 +92,12 @@ and remove `pyright`
 > In Mason find the package and select and:
 > to install -> press `i` (lowercase)
 > to uninstall -> press `X` (uppercase)
+
+#### Configure pycodestyle
+
+create `~/.config/pycodestyle`
+
+```sh
+[pycodestyle]
+ignore = E501, W503, W504
+```
