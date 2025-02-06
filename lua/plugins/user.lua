@@ -85,10 +85,20 @@ return {
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
-    end
-},
+      require("nvim-surround").setup {
+        -- Configuration here, or leave empty to use defaults
+      }
+    end,
+  },
+  {
+    "echasnovski/mini.nvim",
+    branch = "stable",
+    config = function() require("mini.icons").setup() end,
+  },
+  {
+    "folke/lazydev.nvim",
+    config = function() require("lazydev").setup() end,
+  },
+  { "folke/neodev.nvim", enabled = false },
   -- { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 }

@@ -23,6 +23,7 @@ require("lazy").setup({
       disabled_plugins = {
         "gzip",
         "netrwPlugin",
+        "neodev",
         "tarPlugin",
         "tohtml",
         "zipPlugin",
